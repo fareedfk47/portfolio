@@ -10,6 +10,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  const [avatarError, setAvatarError] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -60,8 +61,19 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume }) => {
           className="group flex items-center gap-2.5 focus-ring rounded-lg py-1"
           aria-label="Fareed Khan - Home"
         >
-          <div className="w-8 h-8 rounded-lg bg-obsidian-surfaceHigh border border-obsidian-border flex items-center justify-center font-display font-bold text-xs text-accent-primaryLight transition-all group-hover:bg-obsidian-surfaceHighest group-hover:border-accent-primary/40 group-hover:shadow-[0_0_12px_rgba(99,102,241,0.25)]">
-            FK
+          <div className="w-8 h-8 rounded-lg overflow-hidden border border-obsidian-border group-hover:border-accent-primary/60 transition-all shrink-0 bg-obsidian-surfaceHigh shadow-sm">
+            {!avatarError ? (
+              <img
+                src={personalInfo.avatarUrl}
+                alt="Fareed Khan"
+                onError={() => setAvatarError(true)}
+                className="w-full h-full object-cover"
+              />
+            ) : (
+              <div className="w-full h-full flex items-center justify-center font-display font-bold text-xs text-accent-primaryLight">
+                FK
+              </div>
+            )}
           </div>
           <div className="flex flex-col">
             <span className="font-display font-semibold text-sm tracking-tight text-text-primary group-hover:text-accent-primaryLight transition-colors">

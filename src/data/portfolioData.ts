@@ -7,6 +7,7 @@ export const personalInfo = {
   phone: '+91-9352818370',
   github: 'https://github.com/fareedfk47',
   linkedin: 'https://linkedin.com/in/fareed-khan-174141246',
+  avatarUrl: 'https://avatars.githubusercontent.com/u/134729841?v=4',
   linkedinConnections: '', // Awaiting user's exact verified connection count
   resumeUrl: '/Fareed_Khan_Resume.pdf',
   location: 'Sikar, Rajasthan, India',

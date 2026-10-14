@@ -8,7 +8,7 @@ interface LinkedInProfileCardProps {
 
 export const LinkedInProfileCard: React.FC<LinkedInProfileCardProps> = ({ onOpenResume }) => {
   const [imgError, setImgError] = useState(false);
-  const avatarUrl = "https://avatars.githubusercontent.com/u/134729841?v=4";
+  const avatarUrl = personalInfo.avatarUrl;
 
   return (
     <div className="w-full rounded-2xl bg-obsidian-surfaceLow border border-obsidian-border shadow-2xl overflow-hidden flex flex-col card-bevel transition-all duration-300 hover:border-obsidian-borderHighlight">
