@@ -1,98 +1,122 @@
 # Fareed Khan — Developer Portfolio
 
-A personal developer portfolio for **Fareed Khan**, Full Stack Developer. Built with React 18, TypeScript, Tailwind CSS, and Vite.
+A personal developer portfolio showcasing my skills, experience, and full-stack projects as an aspiring Software Engineer and Full Stack Developer.
 
-## 🚀 Overview
+---
 
-- **Design System:** Obsidian Engineering aesthetic with deep obsidian tones (`#0B0E11`), hairline borders (`#242830`), inner rim bevels, luminous indigo (`#6366F1`) accents, Plus Jakarta Sans display headings, Inter body typography, and JetBrains Mono code telemetry.
-- **Hero & Identity:** Verified LinkedIn Profile Card featuring real developer photo, "Open to Work" status indicator, current role at HostLelo, education, verified certifications, and direct connection actions.
-- **Architectural Bento Grid:** 12-column modular system highlights, core technology chips, commit rhythm visual, and FinLedger spotlight.
-- **Flagship Project:** In-depth technical breakdown of **FinLedger** (banking operations, idempotency keys, double-entry financial ledger, JWT with HTTP-only cookies, and security audit logs).
-- **Verified Credentials:** Real internship contributions at HostLelo, B.Tech in CSE (Sobhasaria Group of Institutions / BTU), and authentic technical certifications.
-- **Zero AI Artifacts:** 100% authentic developer credentials, zero generic chatbots or exaggerated statistics.
+## 📌 About
+
+This repository contains the source code for my personal developer portfolio website. The website is engineered to present my authentic professional background to recruiters, hiring managers, and engineering teams. It highlights:
+- Hands-on full-stack development experience from my internship at **HostLelo** and academic background at **Sobhasaria Group of Institutions (BTU)**.
+- Flagship project architecture and implementation details for **FinLedger** (full-stack banking system).
+- Verified credentials, technical proficiencies, and direct channels for communication.
+
+---
+
+## ✨ Features
+
+- **Responsive & Modern Design:** Engineered with an Obsidian-inspired dark theme, balanced typography (Plus Jakarta Sans, Inter, JetBrains Mono), smooth scroll transitions, and full responsive support across mobile, tablet, and desktop viewports.
+- **LinkedIn Profile Integration:** A dedicated developer card featuring my verified profile photo, current role at HostLelo, and direct connection actions.
+- **Architectural Bento Overview:** Modular 12-column overview highlighting engineering philosophy, core toolset, commit cadence, and key project spotlights.
+- **Featured Projects Showcase:** Deep-dive breakdown into **FinLedger** showcasing banking operations, idempotency keys, double-entry financial ledger, JWT authentication with HTTP-only cookies, and audit logs.
+- **Secondary Projects:** Interactive previews of additional repositories including **melodex-api**, **snake-arcade**, and **GitHub-ProfileViewer**.
+- **Technical Skills Matrix:** Structured categorization across Frontend, Backend, Databases, Languages, and Tools without subjective percentage meters.
+- **Experience & Education Timeline:** Verified chronicle of my ongoing internship at HostLelo (March 2026 – Present) and B.Tech CSE degree (Class of 2025).
+- **Interactive Resume Modal:** In-browser preview with direct download options for `Fareed_Khan_Resume.pdf`.
+- **Contact & Communication:** Direct email copy-to-clipboard toast, LinkedIn connection shortcuts, and direct messaging channels.
+- **SEO & Search Visibility:** Complete Open Graph metadata, Twitter Cards, Schema.org `Person` JSON-LD structured data, XML sitemap, and robots directives.
+
+---
 
 ## 🛠 Tech Stack
 
-- **Framework:** React 18 & TypeScript
-- **Styling:** Tailwind CSS (Obsidian Theme `#0B0E11` & Indigo `#6366F1`)
-- **Icons:** Lucide React
-- **Build Tool:** Vite 6
-- **Deployment:** Vercel ready (`vercel.json` configured with SPA rewrites & security headers)
+The project uses a minimal, production-focused tech stack without unnecessary bloat:
 
-## 📁 Project Structure
+- **Frontend Library:** [React 18](https://react.dev/) (`react`, `react-dom`)
+- **Language:** [TypeScript](https://www.typescriptlang.org/) for strict static typing
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/) with custom design tokens, PostCSS, and Autoprefixer
+- **Iconography:** [Lucide React](https://lucide.dev/) (tree-shaken icons)
+- **Build Tool & Dev Server:** [Vite 6](https://vitejs.dev/) with `@vitejs/plugin-react`
+- **Hosting & Infrastructure:** [Vercel](https://vercel.com/) (configured via `vercel.json` for SPA rewrites, security headers, and asset caching)
 
-```text
-portfolio/
-├── public/
-│   ├── Fareed_Khan_Resume.pdf  # Verified resume PDF document
-│   ├── resume.pdf             # PDF alias for direct linking
-│   ├── robots.txt             # Search engine crawler configuration
-│   └── sitemap.xml            # XML sitemap for SEO discovery
-├── src/
-│   ├── components/
-│   │   ├── Navbar.tsx         # Responsive sticky header with section tracking & resume trigger
-│   │   ├── Hero.tsx           # Two-column hero with verified LinkedIn profile card
-│   │   ├── LinkedInProfileCard.tsx # Authentic LinkedIn profile card with photo & certifications
-│   │   ├── BentoOverview.tsx  # 12-column architectural overview grid
-│   │   ├── FeaturedProject.tsx# Star centerpiece deep-dive into FinLedger
-│   │   ├── OtherProjects.tsx  # Verified repositories (melodex-api, snake-arcade, GitHub-ProfileViewer)
-│   │   ├── About.tsx          # Engineering narrative & core CS background
-│   │   ├── Skills.tsx         # Categorized skills matrix with key technology badges
-│   │   ├── Experience.tsx     # Full Stack Developer Intern at HostLelo timeline
-│   │   ├── EducationCertifications.tsx # B.Tech degree & certified credentials
-│   │   ├── Contact.tsx        # Direct mailto, copy-to-clipboard, GitHub & LinkedIn hubs
-│   │   ├── Footer.tsx         # Minimal copyright & quick links
-│   │   └── ResumeModal.tsx    # Accessible resume viewer and direct download modal
-│   ├── data/
-│   │   └── portfolioData.ts   # Central source of truth for all verified developer information
-│   ├── types/
-│   │   └── portfolio.ts       # TypeScript interfaces
-│   ├── App.tsx                # Main view composition
-│   ├── index.css              # Obsidian theme styling, custom scrollbars, card bevels
-│   └── main.tsx               # React DOM bootstrap
-├── vercel.json                # Vercel deployment configuration
-├── package.json
-├── tailwind.config.js
-├── tsconfig.json
-└── vite.config.ts
-```
+---
 
-## 💻 Getting Started
+## 🚀 Getting Started
 
-### 1. Install dependencies
-```bash
-npm install
-```
+### Prerequisites
 
-### 2. Start local development server
+Ensure you have the following installed on your machine:
+- **Node.js:** v18.0.0 or later (v20+ recommended)
+- **npm:** v9.0.0 or later
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/fareedfk47/portfolio.git
+   cd portfolio
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running Locally
+
+Start the local development server:
 ```bash
 npm run dev
 ```
+Open [http://localhost:5173](http://localhost:5173) in your browser to view the application with hot module replacement (HMR).
 
-### 3. Build for production
+---
+
+## 📦 Build and Deployment
+
+### Production Build
+
+To compile TypeScript and bundle assets for production:
 ```bash
 npm run build
 ```
+This runs `tsc && vite build`, outputting optimized static assets into the `dist/` directory.
 
-### 4. Preview production build locally
+To preview the production build locally:
 ```bash
 npm run preview
 ```
 
-## 🚢 Deployment to GitHub & Vercel
+### Vercel Deployment
 
-### GitHub
-```bash
-git add .
-git commit -m "feat: complete personal portfolio ready for deployment"
-git branch -M main
-git remote add origin https://github.com/fareedfk47/<repo-name>.git
-git push -u origin main
-```
+The project is pre-configured for seamless deployment to **Vercel** via [`vercel.json`](./vercel.json):
 
-### Vercel
-1. Import the GitHub repository into [Vercel](https://vercel.com).
-2. Framework Preset: **Vite**.
-3. Build Command: `npm run build` (configured automatically via `vercel.json`).
-4. Output Directory: `dist`.
-5. Deploy!
+1. Push your repository to GitHub:
+   ```bash
+   git push origin main
+   ```
+2. Go to [Vercel](https://vercel.com) and import the `fareedfk47/portfolio` repository.
+3. Vercel automatically detects the Vite framework settings:
+   - **Framework Preset:** Vite
+   - **Build Command:** `npm run build`
+   - **Output Directory:** `dist`
+4. Click **Deploy**. Vercel will build the project and handle SPA routing and security headers automatically.
+
+---
+
+## 💡 Design & Development Acknowledgment
+
+In the spirit of technical transparency:
+- **Google Stitch:** Used for initial UI design reference and layout inspiration (Obsidian design system, bento modular structures, and typography hierarchy).
+- **Antigravity:** Used for AI-assisted development, code refactoring, accessibility checks, and build configuration.
+
+These tools assisted my workflow in designing and engineering the portfolio, while all personal details, resume credentials, verified experience at HostLelo, and project implementations reflect my authentic work.
+
+---
+
+## 📬 Contact & Links
+
+- **Portfolio Repository:** [github.com/fareedfk47/portfolio](https://github.com/fareedfk47/portfolio)
+- **LinkedIn:** [linkedin.com/in/fareed-khan-174141246](https://linkedin.com/in/fareed-khan-174141246)
+- **GitHub:** [github.com/fareedfk47](https://github.com/fareedfk47)
+- **Email:** [fareedfk4747@gmail.com](mailto:fareedfk4747@gmail.com)

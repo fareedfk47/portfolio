@@ -188,11 +188,11 @@ export const educationData: EducationItem = {
 
 export const certificationsData: CertificationItem[] = [
   {
-    title: 'Core Java Programming Certification',
-    issuer: 'Internshala'
-  },
-  {
     title: 'Full Stack Web Development Certification',
     issuer: 'HostLelo'
+  },
+  {
+    title: 'Core Java Programming Certification',
+    issuer: 'Internshala'
   }
 ];
