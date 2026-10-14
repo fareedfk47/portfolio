@@ -17,7 +17,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
           
           {/* Status Pill */}
           <div className="inline-flex items-center gap-2 self-start px-3 py-1 rounded-full bg-obsidian-surfaceHigh border border-obsidian-border text-xs text-text-secondary">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(74,222,128,0.7)] animate-pulse" />
+            <span className="w-2 h-2 rounded-full bg-accent-primary" />
             <span className="font-mono text-[11px] uppercase tracking-wider text-text-muted">
               Full Stack Developer · HostLelo Intern
             </span>
@@ -56,10 +56,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
             </a>
           </div>
 
-          {/* Direct Telemetry Links */}
+          {/* Social / Profile Links */}
           <div className="flex flex-wrap items-center gap-6 pt-3 border-t border-obsidian-border/60 text-xs">
             <span className="font-mono text-[11px] uppercase tracking-wider text-text-muted">
-              Telemetry:
+              Find me on:
             </span>
 
             <a

@@ -9,7 +9,7 @@ export const OtherProjects: React.FC = () => {
       {/* Section Header */}
       <div className="flex flex-col gap-1.5 mb-8">
         <h2 className="font-display text-xl sm:text-2xl font-bold tracking-tight text-text-primary">
-          Additional Verified Repositories
+          Other Notable Projects
         </h2>
         <p className="font-sans text-xs sm:text-sm text-text-secondary">
           Open-source repositories and development projects from my GitHub profile.

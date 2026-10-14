@@ -97,8 +97,8 @@ export const Skills: React.FC = () => {
             </div>
 
             <div className="mt-5 pt-3 border-t border-obsidian-borderSubtle flex items-center justify-between text-[10px] font-mono text-text-muted">
-              <span>Verified in Code</span>
-              <span className="text-emerald-400">● Active</span>
+              <span>Practical Experience</span>
+              <span className="text-accent-primaryLight">● In Use</span>
             </div>
           </div>
         ))}

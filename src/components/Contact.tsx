@@ -91,7 +91,7 @@ export const Contact: React.FC = () => {
                 github.com/fareedfk47
               </span>
               <p className="font-sans text-xs text-text-secondary mt-1">
-                Review commit cadence, pull requests, and verified repositories.
+                Explore open-source repositories, projects, and recent activity.
               </p>
             </div>
 

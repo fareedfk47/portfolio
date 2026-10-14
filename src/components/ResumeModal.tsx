@@ -74,7 +74,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
                 Official PDF Document Available
               </p>
               <p className="font-sans text-xs text-text-secondary mt-0.5">
-                Download the verified one-page developer resume PDF.
+                Download the one-page developer resume PDF.
               </p>
             </div>
 

@@ -28,7 +28,7 @@ export const FeaturedProject: React.FC = () => {
           <div className="flex flex-col gap-3 max-w-3xl">
             <div className="flex flex-wrap items-center gap-2">
               <span className="px-2.5 py-0.5 rounded text-[10px] font-mono font-semibold bg-accent-container/40 text-accent-secondary border border-accent-secondary/30 uppercase tracking-wider">
-                FLAGSHIP ARCHITECTURE
+                FEATURED PROJECT
               </span>
               <span className="font-mono text-xs uppercase text-text-muted tracking-wider">
                 Full Stack Banking System
@@ -155,7 +155,7 @@ export const FeaturedProject: React.FC = () => {
                 : 'text-text-muted hover:text-text-primary'
             }`}
           >
-            Live Banking Console Simulation
+            Live Banking Console Demo
           </button>
           <button
             role="tab"
@@ -284,7 +284,7 @@ export const FeaturedProject: React.FC = () => {
                         <td className="py-2.5 px-3 text-text-primary font-sans">Account Balance Deposit</td>
                         <td className="py-2.5 px-3 text-text-muted">8f3b...19a2</td>
                         <td className="py-2.5 px-3">
-                          <span className="px-2 py-0.5 rounded text-[10px] bg-emerald-950/60 text-emerald-400 border border-emerald-800/40">Verified</span>
+                          <span className="px-2 py-0.5 rounded text-[10px] bg-emerald-950/60 text-emerald-400 border border-emerald-800/40">Completed</span>
                         </td>
                         <td className="py-2.5 px-3 text-right text-emerald-400 font-semibold">+₹42,000.00</td>
                       </tr>
@@ -294,7 +294,7 @@ export const FeaturedProject: React.FC = () => {
                         <td className="py-2.5 px-3 text-text-primary font-sans">Withdrawal Transfer</td>
                         <td className="py-2.5 px-3 text-text-muted">4b1a...92cc</td>
                         <td className="py-2.5 px-3">
-                          <span className="px-2 py-0.5 rounded text-[10px] bg-emerald-950/60 text-emerald-400 border border-emerald-800/40">Verified</span>
+                          <span className="px-2 py-0.5 rounded text-[10px] bg-emerald-950/60 text-emerald-400 border border-emerald-800/40">Completed</span>
                         </td>
                         <td className="py-2.5 px-3 text-right text-text-primary">-₹8,500.00</td>
                       </tr>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Linkedin, ExternalLink, Building2, GraduationCap, MapPin, Award, CheckCircle2, Send, FileText } from 'lucide-react';
+import { Linkedin, ExternalLink, Building2, GraduationCap, MapPin, Award, Mail, FileText } from 'lucide-react';
 import { personalInfo, educationData, certificationsData } from '../data/portfolioData';
 
 interface LinkedInProfileCardProps {
@@ -42,10 +42,10 @@ export const LinkedInProfileCard: React.FC<LinkedInProfileCardProps> = ({ onOpen
       {/* Main Content Area */}
       <div className="px-5 sm:px-6 pb-6 pt-0 flex flex-col gap-4 relative">
         
-        {/* Avatar overlapping banner + Open To Work Badge */}
+        {/* Avatar overlapping banner */}
         <div className="flex items-end justify-between -mt-12 sm:-mt-14">
           <div className="relative">
-            <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full p-1 bg-obsidian-surfaceLow ring-4 ring-emerald-500/80 shadow-xl overflow-hidden">
+            <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full p-1 bg-obsidian-surfaceLow ring-2 ring-obsidian-borderHighlight shadow-xl overflow-hidden">
               {!imgError ? (
                 <img
                   src={avatarUrl}
@@ -59,16 +59,10 @@ export const LinkedInProfileCard: React.FC<LinkedInProfileCardProps> = ({ onOpen
                 </div>
               )}
             </div>
-            {/* Status dot */}
-            <span 
-              className="absolute bottom-1 right-1 w-4 h-4 rounded-full bg-emerald-400 border-2 border-obsidian-surfaceLow shadow"
-              title="Open to Opportunities"
-            />
           </div>
 
-          <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-950/70 border border-emerald-500/40 text-emerald-400 text-[11px] font-mono mb-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-            <span>Open to Work</span>
+          <div className="px-2.5 py-1 rounded-md bg-obsidian-surface border border-obsidian-border text-text-muted text-[11px] font-mono mb-2">
+            HostLelo Intern
           </div>
         </div>
 
@@ -78,9 +72,6 @@ export const LinkedInProfileCard: React.FC<LinkedInProfileCardProps> = ({ onOpen
             <h2 className="font-display text-xl sm:text-2xl font-bold text-text-primary tracking-tight">
               Fareed Khan
             </h2>
-            <span title="Verified Profile" className="inline-flex items-center">
-              <CheckCircle2 className="w-4 h-4 text-[#70B5F9] shrink-0" />
-            </span>
           </div>
 
           <p className="font-sans text-xs sm:text-sm font-medium text-text-secondary leading-snug">
@@ -150,12 +141,12 @@ export const LinkedInProfileCard: React.FC<LinkedInProfileCardProps> = ({ onOpen
 
         </div>
 
-        {/* Verified Licenses & Certifications */}
+        {/* Licenses & Certifications */}
         <div className="flex flex-col gap-1.5 pt-1">
           <div className="flex items-center justify-between text-xs">
             <span className="font-mono text-[11px] text-text-muted uppercase tracking-wider flex items-center gap-1.5">
               <Award className="w-3.5 h-3.5 text-accent-primary" />
-              <span>Verified Certifications</span>
+              <span>Licenses &amp; Certifications</span>
             </span>
           </div>
 
@@ -176,7 +167,7 @@ export const LinkedInProfileCard: React.FC<LinkedInProfileCardProps> = ({ onOpen
           </div>
         </div>
 
-        {/* LinkedIn Primary Actions */}
+        {/* Action Buttons */}
         <div className="pt-3 border-t border-obsidian-border flex items-center gap-2.5">
           <a
             href={personalInfo.linkedin}
@@ -190,14 +181,12 @@ export const LinkedInProfileCard: React.FC<LinkedInProfileCardProps> = ({ onOpen
           </a>
 
           <a
-            href={personalInfo.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={`mailto:${personalInfo.email}?subject=Job%20Opportunity`}
             className="inline-flex items-center justify-center gap-1.5 py-2.5 px-3.5 rounded-lg bg-obsidian-surface border border-obsidian-border hover:bg-obsidian-surfaceHigh text-text-primary text-xs font-medium transition-colors focus-ring"
-            title="Message on LinkedIn"
+            title="Send Email"
           >
-            <Send className="w-3.5 h-3.5 text-accent-primary" />
-            <span>Message</span>
+            <Mail className="w-3.5 h-3.5 text-accent-primary" />
+            <span>Email</span>
           </a>
 
           {onOpenResume && (

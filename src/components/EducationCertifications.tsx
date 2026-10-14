@@ -15,7 +15,7 @@ export const EducationCertifications: React.FC = () => {
           </span>
         </div>
         <h2 className="font-display text-2xl sm:text-3xl font-bold tracking-tight text-text-primary">
-          Education &amp; Verified Certifications
+          Education &amp; Certifications
         </h2>
       </div>
 
@@ -80,9 +80,9 @@ export const EducationCertifications: React.FC = () => {
                       {cert.issuer}
                     </span>
                   </div>
-                  <span className="flex items-center gap-1 font-mono text-[10px] text-emerald-400 bg-emerald-950/40 px-2 py-0.5 rounded border border-emerald-800/30">
-                    <CheckCircle className="w-3 h-3" />
-                    <span>Verified</span>
+                  <span className="flex items-center gap-1 font-mono text-[10px] text-accent-primaryLight bg-accent-container/20 px-2 py-0.5 rounded border border-accent-secondary/30">
+                    <CheckCircle className="w-3 h-3 text-accent-primary" />
+                    <span>Certified</span>
                   </span>
                 </div>
               ))}
@@ -90,8 +90,8 @@ export const EducationCertifications: React.FC = () => {
           </div>
 
           <div className="pt-5 border-t border-obsidian-borderSubtle flex items-center justify-between text-xs font-mono text-text-muted">
-            <span>Continuous Skill Validation</span>
-            <span className="text-text-secondary">Practical Assessment</span>
+            <span>Continuous Learning</span>
+            <span className="text-text-secondary">Hands-on Focus</span>
           </div>
         </div>
 
