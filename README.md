@@ -1,12 +1,16 @@
 # Fareed Khan — Developer Portfolio
 
+> 🌐 **Live Website:** [portfolio-fareed-khan.vercel.app](https://portfolio-fareed-khan.vercel.app/)  
+> 💼 **LinkedIn Profile:** [linkedin.com/in/fareed-khan-174141246](https://linkedin.com/in/fareed-khan-174141246)  
+> 💻 **GitHub Profile:** [github.com/fareedfk47](https://github.com/fareedfk47)
+
 A personal developer portfolio showcasing my skills, experience, and full-stack projects as an aspiring Software Engineer and Full Stack Developer.
 
 ---
 
 ## 📌 About
 
-This repository contains the source code for my personal developer portfolio website. The website is engineered to present my authentic professional background to recruiters, hiring managers, and engineering teams. It highlights:
+This repository contains the source code for my personal developer portfolio website, live at [portfolio-fareed-khan.vercel.app](https://portfolio-fareed-khan.vercel.app/). The website is engineered to present my authentic professional background to recruiters, hiring managers, and engineering teams. It highlights:
 - Hands-on full-stack development experience from my internship at **HostLelo** and academic background at **Sobhasaria Group of Institutions (BTU)**.
 - Flagship project architecture and implementation details for **FinLedger** (full-stack banking system).
 - Verified credentials, technical proficiencies, and direct channels for communication.
@@ -89,18 +93,11 @@ npm run preview
 
 ### Vercel Deployment
 
-The project is pre-configured for seamless deployment to **Vercel** via [`vercel.json`](./vercel.json):
-
-1. Push your repository to GitHub:
-   ```bash
-   git push origin main
-   ```
-2. Go to [Vercel](https://vercel.com) and import the `fareedfk47/portfolio` repository.
-3. Vercel automatically detects the Vite framework settings:
-   - **Framework Preset:** Vite
-   - **Build Command:** `npm run build`
-   - **Output Directory:** `dist`
-4. Click **Deploy**. Vercel will build the project and handle SPA routing and security headers automatically.
+The project is deployed on **Vercel** and configured via [`vercel.json`](./vercel.json):
+- **Live Production URL:** [https://portfolio-fareed-khan.vercel.app/](https://portfolio-fareed-khan.vercel.app/)
+- **Framework Preset:** Vite
+- **Build Command:** `npm run build`
+- **Output Directory:** `dist`
 
 ---
 
@@ -116,7 +113,8 @@ These tools assisted my workflow in designing and engineering the portfolio, whi
 
 ## 📬 Contact & Links
 
-- **Portfolio Repository:** [github.com/fareedfk47/portfolio](https://github.com/fareedfk47/portfolio)
-- **LinkedIn:** [linkedin.com/in/fareed-khan-174141246](https://linkedin.com/in/fareed-khan-174141246)
-- **GitHub:** [github.com/fareedfk47](https://github.com/fareedfk47)
-- **Email:** [fareedfk4747@gmail.com](mailto:fareedfk4747@gmail.com)
+- 🌐 **Live Website:** [portfolio-fareed-khan.vercel.app](https://portfolio-fareed-khan.vercel.app/)
+- 💼 **LinkedIn Profile:** [linkedin.com/in/fareed-khan-174141246](https://linkedin.com/in/fareed-khan-174141246)
+- 💻 **GitHub Profile:** [github.com/fareedfk47](https://github.com/fareedfk47)
+- 📁 **Portfolio Repository:** [github.com/fareedfk47/portfolio](https://github.com/fareedfk47/portfolio)
+- 📧 **Direct Email:** [fareedfk4747@gmail.com](mailto:fareedfk4747@gmail.com)
